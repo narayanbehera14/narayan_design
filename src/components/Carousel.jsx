@@ -1,33 +1,31 @@
-import heroimage from '../images/Hero_image.png'
-import mount from '../images/mount.png'
-import stonee from '../images/stonee.png'
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from "swiper/modules"
+import "swiper/css"
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import l1 from "../images/logo-1.png"
+import l2 from "../images/logo-2.png"
+import l3 from "../images/logo.png"
 
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+const logos = [l1, l2, l3]
 
 const Carousel = () => {
-  const images = [heroimage, mount, stonee]
-
   return (
     <Swiper
-      spaceBetween={30}
-      centeredSlides
+      modules={[Autoplay]}
+      loop={true}
+      slidesPerView={5}
+      spaceBetween={40}
+      speed={4000}
       autoplay={{
-        delay: 2500,
+        delay: 0,
         disableOnInteraction: false,
       }}
-      pagination={{ clickable: true }}
-      navigation
-      modules={[Autoplay, Pagination, Navigation]}
+      allowTouchMove={false}
       className="mySwiper"
     >
-      {images.map((img, i) => (
-        <SwiperSlide key={i}>
-          <img src={img} width="300" />
+      {[...logos, ...logos, ...logos].map((logo, index) => (
+        <SwiperSlide key={index}>
+          <img src={logo} />
         </SwiperSlide>
       ))}
     </Swiper>

@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: #f8f9f6;
+  background: #ffffff;
   color: #000;
 }
 
@@ -25,21 +25,20 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 24px 80px;
 }
 
 nav h1 {
-  font-size: 22px;
-  font-weight: 600;
+  margin-right: auto;
 }
 
 nav a {
-  margin: 0 16px;
+  margin-left: 24px;
   text-decoration: none;
   color: #000;
   font-size: 14px;
 }
+
 
 nav a:hover {
   text-decoration: underline;
@@ -76,42 +75,59 @@ p {
 }
 
 /* ---------------- SWIPER ---------------- */
+
 .mySwiper {
   width: 80%;
   margin: auto;
-  padding-bottom: 40px;
+  padding: 30px 0;
 }
 
+/* slide wrapper */
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+/* each slide */
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* logo image */
 .swiper-slide img {
   width: 140px;
   opacity: 0.6;
-  transition: 0.3s;
+  transition: opacity 0.3s ease;
 }
 
+/* hover effect */
 .swiper-slide img:hover {
   opacity: 1;
 }
 
-/* arrows */
+/* hide arrows (not needed for infinite scroll) */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #000;
+  display: none;
 }
 
-/* dots */
-.swiper-pagination-bullet {
-  background: #aaa;
+/* hide pagination dots */
+.swiper-pagination {
+  display: none;
+}
+/* background */
+.mySwiper {
+  background: #ffffff;
 }
 
-.swiper-pagination-bullet-active {
-  background: #000;
+/* make logos look bold */
+.swiper-slide img {
+  opacity: 1;
+  filter: contrast(1.25) brightness(1.05);
 }
+
+
 /* ---------- BENEFITS SECTION ---------- */
 #benefits {
   padding: 100px 80px;
@@ -127,7 +143,6 @@ p {
   color: #100a0a;
   margin-bottom: 16px;
 }
-
 /* main heading */
 #benefits > p:nth-child(2) {
   font-size: 64px;
