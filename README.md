@@ -118,35 +118,6 @@ vercel
 
 ---
 
-## 🎯 DevOps Perspective (🔥 Important for You)
-
-This project demonstrates:
-
-* ✅ CI/CD ready structure
-* ✅ Scalable frontend architecture
-* ✅ Production build optimization
-* ✅ Cloud deployment (Vercel)
-* ✅ Code quality using ESLint
-
-👉 You can enhance this into a **DevOps project** by adding:
-
-* Docker 🐳
-* GitHub Actions CI/CD
-* AWS deployment
-* Nginx config
-
----
-
-## 🧪 Future Improvements
-
-* 🔐 Authentication system
-* 🌐 Backend integration (Node.js / Django)
-* 📊 Dashboard analytics
-* ☁️ AWS deployment
-* 🐳 Docker containerization
-
----
-
 ## 🤝 Contributing
 
 ```bash
@@ -178,17 +149,6 @@ This project is proprietary. All rights reserved.
 
 ---
 
-## 👨‍💻 Author
-
-**Narayan Behera**
-🚀 Aspiring DevOps & CloudOps Engineer
-
-* ☁️ AWS | Docker | Kubernetes | Jenkins
-* 💻 React | Node.js | Python
-* 🔗 GitHub: [https://github.com/narayanbehera14](https://github.com/narayanbehera14)
-
----
-
 ## ⭐ Support
 
 If you like this project:
@@ -198,14 +158,3 @@ If you like this project:
 👉 📢 Share it
 
 ---
-
-# 🔥 Want Next Level?
-
-I can upgrade this further with:
-
-* 🔥 GitHub badges
-* 🔥 Animated stats
-* 🔥 DevOps pipeline diagram
-* 🔥 Docker + CI/CD README
-
-Just say: **"make it ultra premium"** 😎
